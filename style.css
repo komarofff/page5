@@ -191,17 +191,17 @@ body {
   max-width: 100%;
 }
 .block-post-image-description {
-    position: absolute;
-    margin-top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: Inter;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 175%;
-    text-align: center;
-    color: #292a2b;
+  position: absolute;
+  margin-top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Inter;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 175%;
+  text-align: center;
+  color: #292a2b;
 }
 .post-page-image {
   width: 100%;
@@ -277,7 +277,34 @@ body {
   line-height: 36px;
   color: #292a2b;
 }
-
+ol > li {
+    position: relative;
+    list-style-type: none;
+    counter-increment: item;
+    padding: 25px 0 0 25px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  color: #292a2b;
+}
+ol > li:before {
+    position: absolute;
+    left: 0;
+    content: counter(item) ". ";
+    font-weight: bold;
+    padding-right: 20px;
+}
+/* ol li {
+  margin: 25px 0 25px 20px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  color: #292a2b;
+} */
 /* MAIN END */
 
 /* FOOTER START */
@@ -291,4 +318,7 @@ p {
 section {
   grid-column: 1/13;
   margin-top: 76px;
+}
+.margin-top-big{
+    margin-top:85px;
 }
