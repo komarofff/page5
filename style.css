@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  width: 100 vw;
+}
+.container {
+  width: 100vw;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  width: 1300px;
+  max-width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+}
+/* HEADER START */
+.header__post {
+  width: 100vw;
+  position: relative;
+  top: -8%;
+  grid-column: 1/13;
+  height: 781px;
+  max-height: 98vh;
+}
+.header__post-banner {
+  width: 100%;
+  grid-column: 1/13;
+  grid-row: 1;
+  object-fit: contain;
+  object-position: center;
+}
+.header__post-title {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 77px;
+  color: #000000;
+}
+.header__post-author {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.5;
+}
+.header__post-data {
+  font-family: ALS Hauss;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.87;
+}
+.header__post-views {
+  font-family: ALS Hauss;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  opacity: 0.87;
+  position: relative;
+}
+.header__post-views::before {
+  content: url(images/views.png);
+  width: 20.99px;
+  height: 11.37px;
+}
+.topblock {
+  z-index: 1;
+  padding: 8px 10px;
+  grid-column: 1/14;
+  align-items: flex-start;
+  grid-row: 1/1;
+  /* position: fixed; */
+}
+.logo {
+  max-width: 170px;
+  grid-column: 1 / span 3;
+  justify-items: flex-start;
+}
+/* TOPMENU */
+.topmenu {
+  height: auto;
+  grid-column: 9 / span 4;
+  justify-items: flex-end;
+  justify-self: flex-end;
+  align-self: flex-start;
+}
+.topmenu ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+}
+.topmenu__link {
+  text-decoration: none;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  margin: 0 20px;
+}
+.contact-button {
+  width: 136px;
+  height: 44px;
+  background: #142346;
+  border-radius: 22px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+.contact-button a {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+.header__banner-description{
+    grid-column: 1/13;
+}
+/* HEADER end */
+/* MAIN START */
+.main {
+  z-index: 2;
+  grid-column: 1/12;
+}
+
+/* MAIN END */
+
+/* FOOTER START */
+.footer {
+  z-index: 2;
+  grid-column: 1/12;
+}
