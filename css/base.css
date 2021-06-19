@@ -1,69 +1,73 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: none;
-  }
-  *::after,*::before{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: none;
-  }
-  html{
-    font-size: var(--base-font-size);
-    color: var(--base-font-color);
-  }
-  body {
-    width: 100%;
-  }
-  .container {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow-x: hidden;
-  }
-  .grid {
-    display: grid;
-    width: 1300px;
-    max-width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .grid-full {
-    display: grid;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    grid-template-columns: repeat(14, 1fr);
-  }
-  p {
-    margin-top: 24px;
-  }
-  section {
-    grid-column: 1/13;
-    margin-top: 76px;
-  }
-  .margin-top-big{
-      margin-top:85px;
-  }
-  .margin-top{
-    margin-top:35px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
 }
-.blue-stripe{
-  background: #DEECFF;
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+html {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: var(--base-font-size);
+  color: var(--base-font-color);
+}
+body {
+  width: 100%;
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.grid {
+  display: grid;
+  width: 1300px;
+  max-width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(12, 1fr);
+}
+.grid-full {
+  display: grid;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(14, 1fr);
+}
+p {
+  margin-top: 24px;
+}
+section {
+  grid-column: 1/13;
+  margin-top: 76px;
+}
+.margin-top-big {
+  margin-top: 85px;
+}
+.margin-top {
+  margin-top: 35px;
+}
+.blue-stripe {
+  background: #deecff;
   padding: 70px 15px;
 }
-.blue-block{
+.blue-block {
   grid-column: 1/13;
 }
-.blue-stripe-text{
+.blue-stripe-text {
   grid-column: 4/11;
 }
-.blue-stripe-text > .post-page-h3{
+.blue-stripe-text > .post-page-h3 {
   line-height: 125%;
 }
-.blue-stripe-text p{
+.blue-stripe-text p {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
