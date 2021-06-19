@@ -3,7 +3,7 @@
     max-width: 100%;
     position: relative;
     grid-column: 1/13;
-    height: 781px;
+    height: 96vh;/*781px;*/
     /* max-height: 98vh; */
   }
   .header__post-banner {
