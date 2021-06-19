@@ -18,12 +18,12 @@
     right: 0;
     grid-column: 8 / span 5;
     mix-blend-mode: darken;
-    transform: rotate(9.36deg);
-    -webkit-transform: rotate(9.36deg);
-    -moz-transform: rotate(9.36deg);
-    -ms-transform: rotate(9.36deg);
-    -o-transform: rotate(9.36deg);
-  }
+    transform: rotate(-9.36deg);
+    -webkit-transform: rotate(-9.36deg);
+    -moz-transform: rotate(-9.36deg);
+    -ms-transform: rotate(-9.36deg);
+    -o-transform: rotate(-9.36deg);
+}
   .header__banner-description {
     grid-row: 1/1;
     z-index: 2;
@@ -84,7 +84,7 @@
     position: relative;
   }
   .header__post-views::before {
-    content: url(images/views.png);
+    content: url(../../images/views.png);
     width: 20.99px;
     height: 11.37px;
   }
