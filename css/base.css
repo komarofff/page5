@@ -38,7 +38,7 @@
     grid-template-columns: repeat(14, 1fr);
   }
   p {
-    margin-top: 34px;
+    margin-top: 24px;
   }
   section {
     grid-column: 1/13;
@@ -47,3 +47,27 @@
   .margin-top-big{
       margin-top:85px;
   }
+  .margin-top{
+    margin-top:35px;
+}
+.blue-stripe{
+  background: #DEECFF;
+  padding: 70px 15px;
+}
+.blue-block{
+  grid-column: 1/13;
+}
+.blue-stripe-text{
+  grid-column: 4/11;
+}
+.blue-stripe-text > .post-page-h3{
+  line-height: 125%;
+}
+.blue-stripe-text p{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--base-font-color);
+}

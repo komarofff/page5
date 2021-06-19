@@ -18,7 +18,7 @@
   
   .topmenu {
     height: auto;
-    grid-column: 9 / span 4;
+    grid-column: 3 / span 10;
     justify-items: flex-end;
     justify-self: flex-end;
     align-self: flex-start;
@@ -41,8 +41,7 @@
   }
   .contact-button {
     cursor: pointer;
-    width: 136px;
-    height: 44px;
+    padding: 15px;
     background: #142346;
     border-radius: 22px;
     border: none;
