@@ -17,7 +17,7 @@
     position: absolute;
     bottom: 30px;
     right: 0;
-    grid-column: 8 / span 5;
+    grid-column: 8 / span 4;
     mix-blend-mode: darken;
     transform: rotate(-9.36deg);
     -webkit-transform: rotate(-9.36deg);
