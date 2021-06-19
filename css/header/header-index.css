@@ -67,14 +67,15 @@
   width: 100%;
 }
 .block-3-images {
-    width: 100%;
-    grid-column: 1/15;
-    margin: 15px 0 75px 0;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+  width: 100%;
+  grid-column: 1/15;
+  margin: 15px 0 75px 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
-.block-3-images-inner-block {
+.little-block {
+  padding: 10px;
   width: 336px;
   height: 360px;
   background: #f5f5f5;
@@ -82,5 +83,87 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+.little-block-image {
+  max-width: 250px;
+  margin-top: 24px;
+}
+.little-block-author {
+  margin-top: 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 117%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-black);
+  opacity: 0.5;
+}
+.little-block-title {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 27px;
+}
+.little-block-date {
+  font-family: ALS Hauss;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--color-black);
+  opacity: 0.87;
+}
+.little-block-views {
+  font-family: ALS Hauss;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--color-black);
+  opacity: 0.87;
+  position: relative;
+}
+.little-block-views::before {
+  content: url(../../images/views.png);
+  width: 15px;
+  height: 8px;
+  margin-left: 20px;
+}
+.block-3-images.little-block > p {
+  margin: 0;
+  padding: 0;
+}
+.blue-dark-stripe {
+  margin: 70px 0;
+  height: 300px;
+  padding: 45px;
+  background: #142346;
+}
+.blue-dark-stripe-title {
+  grid-column: 1/15;
+  justify-items: center;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 62%;
+  text-align: center;
+  color: var(--color-white);
+}
+.blue-dark-stripe-text {
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 125%;
+  color: var(--color-white);
 }
