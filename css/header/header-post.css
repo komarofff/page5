@@ -39,7 +39,7 @@
     -ms-transform: translateY(-55%);
     -o-transform: translateY(-55%);
   }
-  .header__post-title {
+ h1 {
     grid-column: 1/12;
     grid-row: 2/2;
     font-family: Inter;
