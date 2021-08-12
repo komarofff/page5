@@ -1,0 +1,19 @@
+@import url("./components/fonts/circular/stylesheet.css");
+
+html {
+    font-family: Circular Std;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.landing-min-height {
+    min-height: 560px !important;
+
+}
+
+.landing-5xl-line-height {
+    line-height: 130%;
+}
+.landing-color-gray{
+    color:  #949CA5;
+}
