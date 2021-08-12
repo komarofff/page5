@@ -29,6 +29,12 @@ html {
 .landing-rotate-mobile-image{
     position: absolute;
     display: none;
+    top:0;
+    left:0;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
 }
 @media(max-width:768px){
    .landing-rotate-desktop-image {
@@ -36,11 +42,6 @@ html {
    }
     .landing-rotate-mobile-image{
         display: block;
-        top:0;
-        left:0;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-        width: 100%;
+
     }
 }
