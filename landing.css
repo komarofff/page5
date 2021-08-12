@@ -17,7 +17,7 @@ html {
 .landing-color-gray{
     color:  #949CA5;
 }
-.landing-rotate-image{
+.landing-rotate-desktop-image{
     position: absolute;
     top:0;
     left:0;
@@ -26,12 +26,21 @@ html {
     object-position: center;
     width: 100%;
 }
+.landing-rotate-mobile-image{
+    position: absolute;
+    display: none;
+}
 @media(max-width:768px){
-   .landing-rotate-image {
-       top: -21%;
-       /* left: 0; */
-       right: 12%;
-       max-height: 100vw;
-       transform: rotate(90deg);
+   .landing-rotate-desktop-image {
+       display: none;
    }
+    .landing-rotate-mobile-image{
+        display: block;
+        top:0;
+        left:0;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
 }
