@@ -8,6 +8,11 @@
     <title>Onboarding</title>
     <link rel="stylesheet" href="tailwind.css">
     <link rel="stylesheet" href="landing.css">
+    <!-- Slider scripts && css -->
+    <script src="slider_script/jquery-1.11.0.min.js"></script>
+    <script src="slider_script/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slider_script/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slider_script/slick/slick-theme.css"/>
 </head>
 <body class="container min-w-full overflow-x-hidden">
 <header class="container min-w-full overflow-x-hidden ">
@@ -30,15 +35,25 @@
     </div>
 </header>
 <main class="container min-w-full">
-    <section class="container min-w-full  ">
+    <section class="container w-full xl:w-3/4 mx-auto ">
         <p class="text-center mt-20 mb-10 text-lg">Trusted by insurance companies across the world</p>
-        <div class="flex justify-center items-center">
-            <div><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
-            <div><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
-            <div><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
-            <div><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
-            <div><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
-            <div><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+        <div class="text-center  overflow-hidden w-full xl:w-3/4 mx-auto  ">
+        <div class="block" id="slider">
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+            <div class="m-4"><img class="mx-4" src="images/top-slider-image.png" alt="slider"></div>
+
+        </div>
         </div>
     </section>
     <section class="container min-w-full flex justify-between items-start mt-24 lg:flex-nowrap flex-wrap">
@@ -342,6 +357,37 @@
             e.target.parentNode.querySelector(".arrow-up-down").src =   `images/arrow-up.png`
         })
     }
+
+    //slider
+    $('#slider').slick({
+        infinite: false,
+        slidesToShow: 6,
+        slidesToScroll: 6,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        touchMove: true,
+        swipeToSlide: true,
+        arrows: false,
+        responsive: [ {
+            breakpoint: 1100,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4
+            }
+        }, {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                // fade: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                touchMove: true,
+                swipeToSlide: true,
+                arrows: false
+            }
+        }]
+    });
 </script>
 </body>
 </html>
