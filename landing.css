@@ -17,31 +17,32 @@ html {
 .landing-color-gray{
     color:  #949CA5;
 }
-.landing-rotate-desktop-image{
-    position: absolute;
-    top:0;
-    left:0;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-}
-.landing-rotate-mobile-image{
-    position: absolute;
-    display: none;
-    top:0;
-    left:0;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-}
-@media(max-width:768px){
-   .landing-rotate-desktop-image {
-       display: none;
-   }
-    .landing-rotate-mobile-image{
-        display: block;
 
-    }
-}
+/*.landing-rotate-desktop-image{*/
+/*    position: absolute;*/
+/*    top:0;*/
+/*    left:0;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*    object-position: center;*/
+/*    width: 100%;*/
+/*}*/
+/*.landing-rotate-mobile-image{*/
+/*    position: absolute;*/
+/*    display: none;*/
+/*    top:0;*/
+/*    left:0;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*    object-position: center;*/
+/*    width: 100%;*/
+/*}*/
+/*@media(max-width:768px){*/
+/*   .landing-rotate-desktop-image {*/
+/*       display: none;*/
+/*   }*/
+/*    .landing-rotate-mobile-image{*/
+/*        display: block;*/
+
+/*    }*/
+/*}*/
